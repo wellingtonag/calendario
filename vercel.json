@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "api/index.php",
-      "use": "vercel-php@0.5.0"  // Certifique-se de usar uma versão atualizada aqui
+      "use": "vercel-php@0.5.0"  
     }
   ]
 }
