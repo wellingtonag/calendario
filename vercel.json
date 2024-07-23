@@ -1,23 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.php",
-      "use": "@vercel/php"
-    },
-    {
-      "src": "api/calendário.php",
-      "use": "@vercel/php"
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.6.2"
     }
-  ],
+  },
   "routes": [
-    {
-      "src": "/api/calendário.php",
-      "dest": "/api/calendário.php"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.php"
-    }
+    { "src": "/(.*)",  "dest": "/api/index.php" }
   ]
 }
