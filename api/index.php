@@ -20,7 +20,7 @@
             <div class="col-md-8">
                 <h1 class="text-center my-4">Calendário</h1>
                 <?php 
-                include '/api/calendario.php'; 
+                include 'calendario.php'; 
                 ?>
                 <p class="text-left"><?php echo ucfirst($nome_mes) . " - " . $ano_atual; ?></p>
                 <table class="table table-bordered text-center">
